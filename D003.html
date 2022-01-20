@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 03</title>
+    <style>
+
+        body{
+
+            background-image: url(/bg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        button{
+
+            border: none;
+            height: 60px;
+            width: 350px;
+            font-size: 20px;
+            
+            background-color: rgba(165, 51, 51, 0.836);
+            
+            font-family: bebas neue;
+            
+        }
+
+        button:hover{
+
+            box-shadow: 5px 5px 0px rgba(50, 50, 182, 0.753);
+
+        }
+
+        .main-content{
+
+            height: fit-content;
+            width: fit-content;
+            margin: auto;
+            margin-top: 20%;
+        }
+
+        .main-content-title{
+
+            text-align: center;
+            margin: auto;
+            font-family: bebas neue;
+
+            margin-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+    
+    <main class="main-content">
+
+        <h1 class="main-content-title">DESAFIO 003</h1>
+
+        <form action="">
+
+            <label for="but">
+
+                <button value="but" name="but" id="but" onclick="Cadastrar()">CLIQUE PARA CADASTRAR</button>
+
+            </label>
+        </form>
+
+    </main>
+
+    <script>
+
+        function Cadastrar(){
+
+            var nome = String(prompt('Digite seu nome: '))
+            var idade = Number(prompt('Digite sua idade: '))
+            alert(`Seja bem vindo ${nome}, que tem ${idade}anos de idade`)
+            document.writeln(nome)
+        }
+
+    </script>
+
+</body>
+</html>
